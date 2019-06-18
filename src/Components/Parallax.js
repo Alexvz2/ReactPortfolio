@@ -1,18 +1,34 @@
 import React, {Component} from 'react';
-//import './Parallax.css'
-import {ParallaxBanner} from 'react-scroll-parallax';
-//import styles from './Parallax.css';
+import {ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
+import styles from './Parallax.css';
 //import './App.css'
 
 
 const parallaxLayers =[
     {
-        image: './../img/apple.png',
-        amount:0.1,
+        image: require('./../img/ParallaxImg/5Clouds.png'),
+        amount:0,
+        expanded: false,
     },
     {
-        image: './../img/apple.png',
+        image: require('./../img/ParallaxImg/4BackM.png'),
+        amount:0.05,
+        expanded: false,
+    },
+    {
+        image: require('./../img/ParallaxImg/3FrontM.png'),
+        amount:0.055,
+        expanded: false,
+    },
+    {
+        image: require('./../img/ParallaxImg/2BackTrees.png'),
+        amount:0.08,
+        expanded: false,
+    },
+    {
+        image: require('./../img/ParallaxImg/1FrontSpace.png'),
         amount:0.1,
+        expanded: false,
     },
     
 ];
@@ -20,13 +36,17 @@ const parallaxLayers =[
 class ParallaxHeader extends Component {
     render(){
         return (
-                        
-                        <ParallaxBanner
-                            layers = {parallaxLayers}
-                            style={{height: '80%'}}
-                        >
-                            <h1>Hello Im alex</h1>
-                        </ParallaxBanner>
+            <ParallaxProvider>
+            <div className="vertical">
+                <div className={styles.bannerContainer}>
+                    <ParallaxBanner
+                        className={styles.bannerBg}
+                        layers={parallaxLayers}
+                        style={{ height: '75vh' }}
+                    />
+                </div>
+            </div>
+        </ParallaxProvider>
 
         );
     }
