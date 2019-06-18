@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
-import './Navigation.css'
+import {Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap';
+//import './Navigation.css'
 //import './App.css'
 
 class Navigation extends Component {
     render(){
-        
         return (
             <div>
-        <nav>
-          <ul id="mainNav">
-            <li className="active"><a href="#home">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>    
-          </ul>
-        </nav>
-        <section id="home"><h2>Home</h2></section>
-        <section id="work" data-sr><h2>Work</h2></section>
-        <section id="about"><h2>About</h2></section>
-        <section id="contact"><h2>Contact</h2></section>
+       <Navbar bg="light" variant="light" sticky="bottom">
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-primary">Search</Button>
+    </Form>
+  </Navbar>
       </div>
         );
     }

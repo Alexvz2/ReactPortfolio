@@ -7,13 +7,13 @@ import Navigation from './Components/Navigation';
  import About from './Components/About'
 import ParallaxHeader from './Components/Parallax'
 //import './root.scss'
+import 'bootstrap/dist/css/bootstrap.css'
 
 class App extends Component{
     render(){
         return(
             <div>
-                <ParallaxHeader/>
-             <Navigation LogoTitle = "Alex "/>
+             <Navigation/>
             <ParallaxHeader/>
             <About></About>  
             </div>

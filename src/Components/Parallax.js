@@ -42,8 +42,12 @@ class ParallaxHeader extends Component {
                     <ParallaxBanner
                         className={styles.bannerBg}
                         layers={parallaxLayers}
-                        style={{ height: '75vh' }}
-                    />
+                        style={{ height: '100vh' }}
+                    >
+                        <div className={styles.parallaxChildren}>
+                            <h1>Hello, My Name is Alex</h1>
+                        </div>
+                    </ParallaxBanner>
                 </div>
             </div>
         </ParallaxProvider>
