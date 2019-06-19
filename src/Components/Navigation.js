@@ -1,25 +1,38 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap';
-//import './Navigation.css'
+import {Navbar, Nav} from 'react-bootstrap';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import './Navigation.css'
 //import './App.css'
+
+const Icon = {
+  padding: '15px',
+  color: 'rgba(0, 0, 0, 0.5)',
+};
+
 
 class Navigation extends Component {
     render(){
         return (
             <div>
-       <Navbar bg="light" variant="light" sticky="bottom">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-primary">Search</Button>
-    </Form>
-  </Navbar>
-      </div>
+              <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+                <Navbar.Brand href="#home">Alex Vazquez</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="mr-auto">
+                    <Nav.Link href="#Home">Home</Nav.Link>
+                    <Nav.Link href="#About">About Me</Nav.Link>
+                    <Nav.Link href="#Experience">Experience</Nav.Link>
+                    <Nav.Link href="#Projects">Projects</Nav.Link>
+                    <Nav.Link href="#Skills">Skills</Nav.Link>
+                    <Nav.Link href="#Contact">Contact Me</Nav.Link>
+                  </Nav>
+                  <div>
+                  <a href = "https://github.com/Alexvz2" target="_blank" rel="noopener noreferrer" style={Icon}> <FaGithub/> </a>
+                            <a href = "https://www.linkedin.com/in/alex-vazquez/" target="_blank" rel="noopener noreferrer" style={Icon}> <FaLinkedin /> </a>
+                  </div>
+                  </Navbar.Collapse>
+              </Navbar>
+            </div>
         );
     }
 }

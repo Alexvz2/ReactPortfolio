@@ -17,17 +17,17 @@ const parallaxLayers =[
     },
     {
         image: require('./../img/ParallaxImg/3FrontM.png'),
-        amount:0.055,
+        amount:0.06,
         expanded: false,
     },
     {
         image: require('./../img/ParallaxImg/2BackTrees.png'),
-        amount:0.08,
+        amount:0.07,
         expanded: false,
     },
     {
         image: require('./../img/ParallaxImg/1FrontSpace.png'),
-        amount:0.1,
+        amount:0.12,
         expanded: false,
     },
     

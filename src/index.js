@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 //import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Navigation from './Components/Navigation';
- import About from './Components/About'
+import About from './Components/About'
 import ParallaxHeader from './Components/Parallax'
+import Foot from './Components/Footer'
 //import './root.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -16,6 +17,8 @@ class App extends Component{
              <Navigation/>
             <ParallaxHeader/>
             <About></About>  
+            <Foot/>
+
             </div>
 
         );
