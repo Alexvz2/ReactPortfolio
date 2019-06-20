@@ -26,7 +26,7 @@ const parallaxLayers =[
         expanded: false,
     },
     {
-        image: require('./../img/ParallaxImg/1FrontSpace.png'),
+        image: require('./../img/ParallaxImg/1FrontN.png'),
         amount:0.12,
         expanded: false,
     },
