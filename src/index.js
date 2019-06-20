@@ -17,7 +17,7 @@ class App extends Component{
             <div>
              <Navigation/>
             <ParallaxHeader/>
-            <About/>
+            {/* <About/> */}
             <Experience/>
             <Foot/>
             </div>
