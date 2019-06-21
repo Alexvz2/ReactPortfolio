@@ -8,7 +8,7 @@ import About from './Components/About'
 import ParallaxHeader from './Components/Parallax'
 import Experience from './Components/Experience'
 import Foot from './Components/Footer'
-//import './root.scss'
+import './root.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class App extends Component{
@@ -17,7 +17,7 @@ class App extends Component{
             <div>
              <Navigation/>
             <ParallaxHeader/>
-            {/* <About/> */}
+            <About/>
             <Experience/>
             <Foot/>
             </div>

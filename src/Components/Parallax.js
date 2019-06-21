@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
-import styles from './Parallax.css';
+import styles from './Parallax.scss';
 import Typist from 'react-typist';
+
+
 //import './App.css'
 
 
@@ -33,14 +35,65 @@ const parallaxLayers =[
         
     },
     {
-        amount:0,
+        amount:0.1,
         expanded: false,
-        children: (<Typist style={{fontSize: '10vh', color:'#000000', textAlign: 'center', lineHeight: '120vh' }}>Hello, My Name is Alex</Typist>),
+        children: (
+            <Typist 
+                avgTypingDelay={80}
+                startDelay={2000}
+                cursor={{ hideWhenDone: true }}
+                //onTypingDone={this.onHeaderTyped}
+                >
+                    <div style={{fontSize: '10vh', color:'#00000', textAlign: 'center', lineHeight: '2vh', marginTop:'20vh' }}> 
+                        Hello, My Name is Alex.
+                        
+                    </div>
+                    <div style={{fontSize: '10vh', color:'#fff', textAlign: 'center', lineHeight: '2vh', marginTop:'25vh' }}> 
+                   
+                        I'm..
+                    </div>
+
+            </Typist>),
     },
+    {
+        amount:0.12,
+        expanded: false,
+        children: (
+            <div style={{fontSize: '5vh', color:'#fff', textAlign: 'center', lineHeight: '7vh', marginTop:'60vh' }}>
+            <Typist
+              cursor={{ hideWhenDone: true }}
+              avgTypingDelay={80}
+              startDelay={2200}
+            >
+                <Typist.Delay ms={2000} />
+              * An Electrical & Computer Engineering Student at UBC
+              <Typist.Delay ms={1250} />
+              <br />
+              * A Senior Controls Developer for Orbit
+              <Typist.Delay ms={1250} />
+              <br />
+              * Currently Working as a devel<Typist.Delay ms={500} />oper
+              <Typist.Backspace count={9} delay={1000} />
+              <Typist.Delay ms={750} />
+               SWE for Microsoft.
+              <Typist.Delay ms={1250} />
+              <br />
+              *Learn more
+            </Typist>
+        </div>),
+    },
+
     
 ];
 
 class ParallaxHeader extends Component {
+    state = {
+        renderMsg: false,
+      }
+    
+      onHeaderTyped = () => {
+        this.setState({ renderMsg: true });
+      }
     render(){
         return (
             <ParallaxProvider>
@@ -50,9 +103,6 @@ class ParallaxHeader extends Component {
                         className={styles.bannerBg}
                         layers={parallaxLayers}
                         style={{ height: '100vh' }}>
-                        
-                        <h1 style={{fontSize: '10vh', color:'#000000', textAlign: 'center', lineHeight: '120vh' }}>Text to Show</h1>
-                        <Typist style={{fontSize: '10vh', color:'#000000', textAlign: 'center', lineHeight: '120vh' }}>Animated Text to Show</Typist>
                     </ParallaxBanner>
                 </div>
             </div>
