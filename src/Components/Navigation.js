@@ -27,8 +27,8 @@ class Navigation extends Component {
                     <Nav.Link href="#Contact">Contact Me</Nav.Link>
                   </Nav>
                   <div>
-                  <a href = "https://github.com/Alexvz2" target="_blank" rel="noopener noreferrer" style={Icon}> <FaGithub/> </a>
-                            <a href = "https://www.linkedin.com/in/alex-vazquez/" target="_blank" rel="noopener noreferrer" style={Icon}> <FaLinkedin /> </a>
+                    <a href = "https://github.com/Alexvz2" target="_blank" rel="noopener noreferrer" style={Icon}> <FaGithub/> </a>
+                    <a href = "https://www.linkedin.com/in/alex-vazquez/" target="_blank" rel="noopener noreferrer" style={Icon}> <FaLinkedin /> </a>
                   </div>
                   </Navbar.Collapse>
               </Navbar>

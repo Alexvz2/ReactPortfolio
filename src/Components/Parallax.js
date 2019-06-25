@@ -44,13 +44,9 @@ const parallaxLayers =[
                 cursor={{ hideWhenDone: true }}
                 //onTypingDone={this.onHeaderTyped}
                 >
-                    <div style={{fontSize: '10vh', color:'#00000', textAlign: 'center', lineHeight: '2vh', marginTop:'20vh' }}> 
-                        Hello, My Name is Alex.
+                    <div style={{fontSize: '10vh', color:'#00000', textAlign: 'center', lineHeight: '10vh', marginTop:'10vh' }}> 
+                        Hello, My Name is Alex.<br/>I'm..
                         
-                    </div>
-                    <div style={{fontSize: '10vh', color:'#fff', textAlign: 'center', lineHeight: '2vh', marginTop:'25vh' }}> 
-                   
-                        I'm..
                     </div>
 
             </Typist>),
