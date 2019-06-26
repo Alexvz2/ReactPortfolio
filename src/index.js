@@ -9,6 +9,7 @@ import ParallaxHeader from './Components/Parallax';
 import Experience from './Components/Experience';
 import Foot from './Components/Footer';
 import ProjectsTab from './Components/Projects';
+import Skills from './Components/Skills'
 import './root.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -19,8 +20,9 @@ class App extends Component{
              <Navigation/>
             <ParallaxHeader/>
             <About/>
-            <ProjectsTab/>
             <Experience/>
+            <ProjectsTab/>
+            <Skills/>
             <Foot/>
             </div>
 

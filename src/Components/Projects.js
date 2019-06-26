@@ -66,7 +66,7 @@ class PCards extends Component{
     render(){
         return(
             <Card>
-                <Card.Img variant="top" src='../img/ParallaxImg/Galaxy.jpg/100px160' />
+                <Card.Img variant="top" src={require('../img/ParallaxImg/Galaxy.jpg')} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                             <Card.Text>
