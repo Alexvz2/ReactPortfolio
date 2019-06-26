@@ -10,13 +10,13 @@ import Orbit from '../img/Companies/Orbit.png'
 class Experience extends Component{
     render(){
         return(
-            <Container style ={{paddingBottom:'5rem'}}>
+            <Container style ={{paddingBottom:'5rem', paddingTop:'5rem'}}>
                  <h1>Experience</h1>
                 <Row>
                 <PxCards logoUrl={Bowman} title='Bowman Technologies ---- Software Engineer --------- Vancouver, CA 2017'/>
                 <PxCards logoUrl={Orbit} title='UBC Orbit ------------------- Senior Controls Engineer --- Vancouver, CA 2017'/>
                 <PxCards logoUrl={Inetco} title='Inetco LTD --------------- Software Engineer --------- Burnaby, CA 2018'/>
-                <PxCards logoUrl={Microsoft} title='Microsoft ---------------- Software Engineer(Explorer) ----- Redmond, USA 2019'/>
+                <PxCards logoUrl={Microsoft} title='Microsoft ---------------- Software Engineer(Explorer) --- Redmond, USA 2019'/>
                 </Row>
             </Container>
         );

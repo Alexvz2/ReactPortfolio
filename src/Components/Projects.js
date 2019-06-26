@@ -12,7 +12,7 @@ class ProjectsTab extends Component {
     }
     render() {
         return (
-        <Container className='Projects'>
+        <Container className='Projects' style ={{paddingBottom:'5rem', paddingTop:'5rem'}}>
             <h1> Projects</h1>
           <Tabs
             id="controlled-tab-example"
@@ -65,7 +65,7 @@ class Projects extends Component{
 class PCards extends Component{
     render(){
         return(
-            <Card>
+            <Card >
                 <Card.Img variant="top" src={require('../img/ParallaxImg/Galaxy.jpg')} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
