@@ -10,6 +10,7 @@ import Experience from './Components/Experience';
 import Foot from './Components/Footer';
 import ProjectsTab from './Components/Projects';
 import Skills from './Components/Skills'
+import Contact from './Components/Contact'
 import './root.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -23,6 +24,7 @@ class App extends Component{
             <Experience/>
             <ProjectsTab/>
             <Skills/>
+            <Contact/>
             <Foot/>
             </div>
 
