@@ -26,7 +26,6 @@ class ProjectsTab extends Component {
             </Tab>
             <Tab eventKey="HW" title="Hardware">
                 <Projects/>
-                <Projects/>
             </Tab>
             <Tab eventKey="UBC" title="School Projects" >
                 <Projects/>
@@ -67,7 +66,7 @@ class PCards extends Component{
     render(){
         return(
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src='../img/ParallaxImg/Galaxy.jpg/100px160' />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                             <Card.Text>
