@@ -5,7 +5,7 @@ import {Form, Container, Button} from 'react-bootstrap';
 class Contact extends Component{
     render(){
         return(
-            <Container style ={{paddingTop:'17rem'}}>
+            <Container style ={{paddingTop:'12rem'}}>
                 <h1>Contact Me</h1>
                 <Form style={{color:'#F5F5F5'}}>
                     <Form.Group controlId="exampleForm.ControlInput1">

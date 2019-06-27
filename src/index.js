@@ -19,12 +19,18 @@ class App extends Component{
         return(
             <div>
              <Navigation/>
-            <ParallaxHeader/>
-            <About/>
-            <Experience/>
-            <ProjectsTab/>
-            <Skills/>
-            <Contact/>
+            <ParallaxHeader
+            id="home"/>
+            <About
+            id="about"/>
+            <Experience
+            id="exp"/>
+            <ProjectsTab
+            id="proj"/>
+            <Skills
+            id="skills"/>
+            <Contact
+            id="contact"/>
             <Foot/>
             </div>
 

@@ -10,5 +10,11 @@ body {
     // align-items: center;
     // justify-content: center;
 }
+.nav-logo:hover {
+    cursor: pointer;
+  }
 
-
+  .nav-item:hover {
+    color: black;
+    cursor: pointer;
+  }

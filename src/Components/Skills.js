@@ -29,9 +29,6 @@ class Skills extends Component{
                 <SkillBar name='Arduino' percentage='70' imgUrl ={Cplus}/>
                 <SkillBar name='STM32' percentage='60' imgUrl ={JS}/>
                 <SkillBar name='CPEN' percentage='90' imgUrl ={SQL}/>
-                <h3 style={{color:'#fff'}}>Cloud Services</h3>
-                <SkillBar name='GCP' percentage='95' imgUrl ={Python}/>
-                <SkillBar name='Firebase' percentage='70' imgUrl ={Cplus}/>
             </Container>
         );
     }
@@ -60,7 +57,7 @@ class SkillBar extends Component{
         //     }
         // };
         return(
-                <Row>
+                <Row style={{paddingTop: "1.5rem"}}>
                     <Col xs={4} md={2}>
                         <img src={imgUrl} style={{ maxWidth: '5rem', maxHeight: '5rem' }} alt='loading..'/>
                     </Col>
